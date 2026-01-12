@@ -1,0 +1,94 @@
+body {
+    font-family: Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.send-button {
+    width: 75px;
+    height: 42px;
+    color: white;
+    background-color: #198754;
+    padding: 12px 20px;
+    border-radius: 0.5rem;
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.chat-input {
+    border-radius: 0.5rem;
+    padding: 12px 15px;
+    border: 1px solid black;
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+.chat-input-container {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.app-container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-message-user {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+.chat-message-robot {
+    display: flex;
+    align-items: start;
+}
+
+.chat-message-text {
+    background-color: rgb(238, 238, 238);
+    padding: 15px 20px;
+    border-radius: 0.5rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.chat-message-profile {
+    width: 45px;
+}
+
+.chat-messages-container {
+    flex-grow: 1;
+    margin-top: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.chat-messages-container p {
+    color: #787878;
+    font-size: 16px;
+    margin-top: 550px;
+}
+
+
+.loading-spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #ddd;
+    border-top: 3px solid #198754;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 10px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
